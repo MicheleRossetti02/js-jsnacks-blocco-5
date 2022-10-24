@@ -6,7 +6,7 @@ const zucchine = [
     {
         'varietà': "trombetta",
         'peso': 10,
-        'lunghezza': 7
+        'lunghezza': 17
     },
     {
         //2
@@ -36,19 +36,19 @@ const zucchine = [
         //6
         'varietà': "trombetta",
         'peso': 10,
-        'lunghezza': 7
+        'lunghezza': 17
     },
     {
         //7
         'varietà': "trombetta",
         'peso': 12,
-        'lunghezza': 6
+        'lunghezza': 16
     },
     {
         //8
         'varietà': "trombetta",
         'peso': 9,
-        'lunghezza': 8
+        'lunghezza': 18
     },
     {
         //9
@@ -64,10 +64,19 @@ const zucchine = [
     },
 ]
 
-//sommiamo i vari elemnti
-let somma_peso = 0;
+const zucchine_corte =[]
+const zucchine_lunghe = []
 
 zucchine.forEach((zucchina) => {
-    somma_peso += zucchina.peso 
+    
+    if (zucchina.lunghezza > 15) {
+        zucchine_lunghe.push(zucchina)
+    } else{
+        zucchine_corte.push(zucchina)
+
+    }
+ 
+
 });
-console.log(somma_peso);
+console.log(zucchine_lunghe);
+console.log(zucchine_corte);
